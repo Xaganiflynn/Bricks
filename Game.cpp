@@ -88,6 +88,13 @@ void Game::Render() const
 		Console::SetCursorPosition(20, 21); 
 		std:: cout << "Press 'R' to try again!";
 	}
+	if (bricks.size() == 0)
+	{
+		Console::SetCursorPosition(20, 20);
+		std::cout << "Wow you're a god!!" << '\n';
+		Console::SetCursorPosition(20, 21);
+		std::cout << "Press 'R' to try again!";
+	}
 }
 
 void Game::CheckCollision()
