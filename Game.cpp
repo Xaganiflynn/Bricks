@@ -21,12 +21,8 @@ void Game::Reset()
 	ResetBall();
 
 	if (!bricks.empty())
-	{
 		while (!bricks.empty())
-		{
 			bricks.pop_back();
-		}
-	}
 
 	// TODO #2 - Add this brick and 4 more bricks to the vector
 	for (size_t i = 0; i < 5; i++)
